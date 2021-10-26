@@ -1,0 +1,95 @@
+@media (max-width: 800px) {
+    #menu-btn {
+        color: black;
+        display: inline-block;
+        font-size: 2em;
+    }
+    header nav img {
+        height: 70px;
+    }
+    header nav .nav-links{
+        position: absolute;
+        visibility: hidden;
+        width: 0px;
+        right: -220px;
+        top: 110px;
+        transition: .6s;
+        overflow-x: hidden;
+    }
+    .nav-links.active {
+        visibility: visible;
+        display: inline-block;
+        width: auto;
+        right: 20px;
+        padding: 40px 20px;
+        background-color: #f52720;
+        overflow-x: visible;
+    }
+    .nav-links.active::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -25px;
+        width: 0; 
+        height: 0; 
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent; 
+        border-right:25px solid #f52720; 
+        z-index: 3;
+        
+    }
+    header nav .nav-links ul {
+        display: inline-block;
+        width: 150px;
+    }
+    header nav .nav-links ul li {
+        padding: 10px 0;
+    }
+    header nav .nav-links ul li a{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    header .background h1 {
+        font-size: 2.5em;
+    }
+    header .background p {
+        text-align: center;
+    }
+    main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main #como-doar {
+        flex-direction: column-reverse;
+    }
+    main #onde-doar {
+        flex-direction: column-reverse;
+    }
+    main section img {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+    main section div h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    main section div p {
+        font-size: 0.7em;
+    }
+    main #requisitos .text-requisitos ul li {
+        font-size: .7em;
+    }
+    aside .aside-content {
+       flex-direction: column;
+    }
+}
+@media (max-width: 350px){
+    header .background h1 {
+        font-size: 2.2em;
+    }
+    header .background p {
+        font-size: 1.6em;
+    }
+}

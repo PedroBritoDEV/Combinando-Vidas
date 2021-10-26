@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Roboto Mono', monospace; */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header {
+    background-color: #D21F1A;
+    width: 100vw;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    max-width: 1300px;
+    height: 100px;
+    margin: auto;
+}
+#menu-btn {
+    color: black;
+    display: none;
+}
+header nav img {
+    height: 80px;
+}
+header nav .nav-links ul {
+    display: flex;
+}
+header nav .nav-links ul li{
+    list-style: none;
+}
+header nav .nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 0 15px;
+    word-spacing: -8px;
+    font-weight: 600;
+    color: #082032;
+}
+header .background {
+    background-image: url(../images/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -3px 2px 13px #00000080;
+}
+header .background h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+header .background p {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+main {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+main section {
+    margin: 30px 0;
+    display: flex;
+}
+main section img {
+    width: 250px;
+    height: 250px;
+}
+
+main section div {
+    text-align:justify;
+}
+main section div p {
+    color: #5c5b5b;
+    margin: 10px 0;
+}
+main #projeto {
+    position: relative;
+}
+main #projeto::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+}
+main #projeto img{
+    margin-right: 15px;
+}
+main #projeto .text-project{}
+main #projeto .text-project h2{}
+
+
+main #como-doar {
+    position: relative;
+}
+main #como-doar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    bottom: 0;
+}
+main #como-doar img {
+    margin-left: 15px;
+}
+main #requisitos {
+    position: relative;
+    align-items: center;
+}
+main #requisitos::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+}
+main #requisitos img {
+    margin-right: 15px;
+}
+main #requisitos .text-requisitos ul {
+    margin: 10px 0;
+    list-style-position: inside;
+}
+main #requisitos .text-requisitos ul li {
+    color: #424242;
+}
+main #onde-doar {
+    justify-content: flex-end;
+    align-items: center;
+}
+main #onde-doar .text-onde-doar ul {
+    display: flex;
+    flex-direction: column;
+}
+main #onde-doar .text-onde-doar ul li {
+    list-style: none;
+}
+main #onde-doar .text-onde-doar ul li a {
+    text-decoration: none;
+} 
+
+aside {
+    background-color: #D21F1A;
+    width: 100vw;
+    padding: 10px;
+}
+aside .aside-content {
+    display: flex;
+    justify-content: space-around;
+}
+aside .aside-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside .aside-content div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+aside .aside-content div div {
+    flex-direction: row;
+}
+aside .aside-content div h4 {
+    text-align: center;
+    margin: 15px 0;
+}
+aside .aside-content div h5 {
+    color: #082032;
+    font-size: 1em;
+} 
+aside .aside-content div p {
+     color: #082032;
+}
+aside .aside-content .bolsistas .bolsistas-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+aside .aside-content .bolsistas .bolsistas-content div {
+    margin: 10px 0;
+}
+aside .aside-content div div .aside-text {
+    flex-direction: column;
+}
+
+/*animação*/
+
+.left {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.right {
+    transform: translateX(50%);
+    opacity: 0;
+}
+.scroll {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
